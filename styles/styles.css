@@ -106,8 +106,8 @@ nav {
     /* Layout Properties */
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2rem;
-    align-self: center;
 }
 
 nav a {
@@ -129,21 +129,33 @@ nav a img {
     margin-right: 9px;
 }
 
+.dr-info {
+    display: grid;
+    grid-template-columns: 44px 1fr 1fr;
+    grid-row: 1fr;
+    align-items: center;
+    gap: .5rem;
+}
+
 .dr-img {
     width: 44px;
     height: 44px;
     align-self: center;
-}
-
-
-.dr-info {
-    display: flex;
-    flex-direction: row;
+    grid-column: 1/2;
 }
 
 .dr-name {
     display: grid;
     grid-template-rows: 20px 20px;
     align-items: center;
-    margin-left: 8px;
+    grid-column: 2/3;
+}
+
+.settings-aside {
+    padding-left: 1rem;
+    grid-column: 3/4;
+}
+
+.setting-dots {
+    margin-left: .5rem;
 }
