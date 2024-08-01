@@ -11,7 +11,7 @@
     --unnamed-color-084c77: #084C77;
     --unnamed-color-055a92: #055A92;
     --unnamed-color-006aac: #006AAC;
-    --unnamed-color-007bc7: #007BC7;
+    --hover-color-007bc7: #007BC7;
     --unnamed-color-707070: #707070;
     --unnamed-color-f6f6f6: #F6F6F6;
     --unnamed-color-ededed: #EDEDED;
@@ -105,26 +105,25 @@ nav {
     /* Layout Properties */
     display: flex;
     flex-direction: row;
-    top: 23px;
-    left: 473px;
-    width: 663px;
-    height: 63px;
-    /* UI Properties */
-    opacity: 1;
-    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
-    letter-spacing: var(--unnamed-character-spacing-0);
-    color: var(--unnamed-color-072635);
-    text-align: left;
-    font: normal normal bold 14px/19px Manrope;
-    letter-spacing: 0px;
-    color: #072635;
-
+    gap: 2rem;
+    align-self: center;
 }
 
 nav a {
-    /* UI Properties */
-    background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
-    background: #01F0D0 0% 0% no-repeat padding-box;
+    color: #072635;
+    opacity: 1;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+}
+
+nav a:hover {
+    background-color: #01F0D0;
     border-radius: 41px;
     opacity: 1;
+}
+
+nav a img {
+    width: 17px;
+    height: 15.51px;
+    margin-right: 9px;
 }
